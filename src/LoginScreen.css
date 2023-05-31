@@ -1,0 +1,97 @@
+.loginScreen{
+    position: relative;
+    height: 100%;
+    background: url("https://isquad.tv/wp-content/uploads/2018/08/Netflix-Background.jpg") center no-repeat;
+    background-size: cover;
+}
+
+.loginScreen_logo{
+    position: fixed;
+    left: 0;
+    width: 150px;
+    object-fit: contain;
+    padding-top: 20px;
+    padding-left: 20px;
+}
+
+.loginScreen_gradient{
+    width: 100px;
+    z-index: 1;
+    height: 100vh;
+}
+
+.loginScreen::before,
+.loginScreen::after {
+  content: "";
+  position: absolute;
+  top: 0;
+  bottom: 0;
+  width: 100%;
+  background: linear-gradient(to top, rgba(0, 0, 0, 0.6), rgba(0, 0, 0, 0));
+}
+
+.loginScreen::before {
+  left: 0;
+}
+
+.loginScreen::after {
+  right: 0;
+}
+
+.loginScreen_body > h1{
+    font-size: 3.125 rem;
+    font-weight: 400;
+    margin-bottom: 20px;
+}
+
+.loginScreen_body > h2{
+    font-size: 3.125 rem;
+    font-weight: 400;
+    margin-bottom: 20px;
+}
+
+.loginScreen_body > h3{
+    font-size: 1.3 rem;
+    font-weight: 400;
+}
+
+.loginScreen_body {
+    position: absolute;
+    top: 50%;
+    left: 50%;
+    transform: translate(-50%, -50%);
+    text-align: center;
+    z-index: 1;
+    color: #fff;
+    padding: 20px;
+    text-shadow: 2px 2px 4px rgba(0, 0, 0, 0.8); /* Adjust the shadow size and color */
+    right: 0;
+  }
+
+.loginScreen_input {
+  margin: 20px;
+}
+
+.loginScreen_input > form > input {
+  padding: 10px;
+  outline-width: 0;
+  height: 30px;
+  width: 30%;
+  border: none;
+  max-width: 600px;
+}
+
+.loginScreen_email {
+  padding: 16px 60px;
+  font-size: 1rem;
+  color: #fff;
+  background-color: #e50914;
+  border: none;
+  font-weight: 600;
+  cursor: pointer;
+}
+
+
+
+  
+  

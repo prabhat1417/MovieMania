@@ -1,0 +1,52 @@
+.cast {
+    color: white;
+    margin-left: 20px;
+  }
+  
+  .cast_list {
+    display: flex;
+    overflow-y: hidden;
+    overflow-x: scroll;
+    padding-bottom: 10px;
+  }
+  
+  .cast_list::-webkit-scrollbar {
+    display: none;
+  }
+  
+  .cast_item {
+    margin-right: 10px;
+  }
+  
+  .cast_image {
+    justify-content: space-between;
+    max-height: 200px;
+    object-fit: contain;
+    margin-bottom: 10px;
+    transition: transform 450ms;
+    margin-right: 50px;
+    border-radius: 10%;
+  }
+  
+  .cast_image:hover {
+    transform: scale(1.08);
+    opacity: 1;
+  }
+  
+  .cast_name {
+    font-size: 14px;
+    margin-top: 5px;
+    font-weight: 400;
+    font-family: Arial, Helvetica, sans-serif;
+    margin-left: 20px;
+  }
+  
+  .title {
+    margin-top: 10px;
+    margin-left: 10px;
+    margin-bottom: 10px;
+    color: #e50914;
+    font-family: Arial, Helvetica, sans-serif;
+    font-weight: 500;
+  }
+  

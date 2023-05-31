@@ -4,7 +4,6 @@
 /node_modules
 /.pnp
 .pnp.js
-src/Firebase.js
 
 
 # testing
@@ -23,3 +22,6 @@ src/Firebase.js
 npm-debug.log*
 yarn-debug.log*
 yarn-error.log*
+
+/src/Requests.js
+/src/Firebase.js
