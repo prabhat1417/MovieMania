@@ -34,7 +34,7 @@ function SignInScreen() {
                 <input ref={emailRef} placeholder='Email' type="email" />
                 <input ref={passwordRef} placeholder='Password' type="password" />
                 <button onClick={signIn} type="submit">Sign In</button>
-                <h4><span className='gray'>New to Netflix?</span><span className='link' onClick={register}> Sign up now.</span></h4>
+                <h4><span className='gray'>New to MovieMania?</span><span className='link' onClick={register}> Sign up now.</span></h4>
             </form>
         </div>
     )

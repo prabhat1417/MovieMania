@@ -6,7 +6,8 @@ import Login from './LoginScreen';
 import Description from './Description';
 import TV from './TV';
 import TV_Description from './tv_description';
-import Search from './Search'; // Import the Search component
+import Search from './Search';
+import Cast from './Cast_description';
 import { auth } from './Firebase.js';
 import { useDispatch, useSelector } from 'react-redux';
 import { login, logout, selectUser } from '../src/features/userSlice.js';
@@ -53,6 +54,7 @@ function App() {
                 element={<TV_Description />}
               />
               <Route path="/search" element={<Search />} /> // Add the Search component route
+              <Route path="/cast/:personId" element={<Cast />} />
             </>
           )}
         </Routes>

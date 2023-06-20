@@ -30,7 +30,18 @@ function SearchResults() {
       fetchSearchResults();
     }
   }, [searchQuery]);
-
+  const openDescription = (result) => {
+    // Determine the new path based on the current location and movie ID
+    let newPath;
+    if (result.media_type === 'movie') {
+      newPath = `/description/${result.id}`;
+    } else {
+      newPath = `/tv_description/${result.id}`;
+    }
+  
+    // Refresh the page and then navigate to the new path
+    window.location.href = newPath;
+  };
   return (
     <div className='search'>
       <Nav />
@@ -42,6 +53,7 @@ function SearchResults() {
             src={`https://image.tmdb.org/t/p/w500/${result.poster_path}`}
             alt={result.title || result.name}
             effect="blur"
+            onClick={() => openDescription(result)}
           />
         ))}
       </div>

@@ -1,5 +1,5 @@
 .search {
-    padding-top: 70px; /* Adjust the padding to leave space for the navbar */
+    padding-top: 90px; /* Adjust the padding to leave space for the navbar */
     background-color: #000;
     min-height: 100vh; /* Set the minimum height to fill the viewport */
   }
@@ -14,8 +14,9 @@
   .poster {
     width: 200px;
     height: auto;
-    object-fit: contain;;
+    object-fit: contain;
     margin: 10px;
+    cursor: pointer;
   }
   
   

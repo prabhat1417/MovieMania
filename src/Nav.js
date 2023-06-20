@@ -1,3 +1,4 @@
+import '@fortawesome/fontawesome-free/css/all.min.css';
 import React, { useState, useEffect } from 'react';
 import { useNavigate, useLocation } from 'react-router-dom';
 import logo from './images/logo.png';
@@ -67,12 +68,17 @@ function Nav() {
             TV
           </h2>
           <form onSubmit={handleSearch}>
-            <input className='searching'
-              type="text"
-              placeholder="Search..."
-              value={inputValue}
-              onChange={(e) => setInputValue(e.target.value)}
-            />
+            <div className="search-container">
+              <input
+                type="text"
+                placeholder="Search..."
+                value={inputValue}
+                onChange={(e) => setInputValue(e.target.value)}
+              />
+              <button type="submit">
+              🔍
+              </button>
+            </div>
           </form>
         </div>
         <img

@@ -37,7 +37,7 @@ function Description() {
   }, [movieId]);
 
   if (!movie) {
-    return <div>Loading...</div>;
+    return <div><Preloader /></div>;
   }
 
   const handlePlayClick = () => {

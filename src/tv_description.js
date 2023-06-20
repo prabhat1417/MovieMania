@@ -39,7 +39,7 @@ function TV_Description() {
   }, [movieId]);
 
   if (!movie) {
-    return <div>Loading...</div>;
+    return <div><Preloader/></div>;
   }
   const handlePlayClick = () => {
     setIsModalOpen(true);
